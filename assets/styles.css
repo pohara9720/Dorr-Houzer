@@ -1,28 +1,32 @@
-body{
-	background-color: black;
+body {
+    background-color: black;
 }
-.indicators{
-	display:none;
-}
-#load{
-	height: 100vh !important;
-	width: 100vw !important;
-}
-.full{
-	height: 100vh !important;
-	width: 100vw !important;
-	position: relative;
-}
-.cap{
-	 position: absolute;
-  top: 300px;
-  left: 350px;	
-   color: white;
-   letter-spacing: 5px;
-   font-size: 100px;
-   font-family: 'News Cycle', sans-serif;
 
+.indicators {
+    display: none;
 }
+
+#load {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+.full {
+    height: 100vh !important;
+    width: 100vw !important;
+    position: relative;
+}
+
+.cap {
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 100px;
+    font-family: 'News Cycle', sans-serif;
+}
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -31,6 +35,7 @@ body{
         opacity: 1;
     }
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -48,6 +53,7 @@ body{
         opacity: 0;
     }
 }
+
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -73,8 +79,9 @@ body{
     -webkit-animation-duration: 1s;
     animation-duration: 1s
 }
-.hide{
-	display: none;
+
+.hide {
+    display: none;
 }
 
 .full {
@@ -82,35 +89,187 @@ body{
     margin: 0 auto;
     text-align: center;
 }
-nav{
-	position: absolute;
-	top: 0 !important;
-	background-color: white;
-	height: 70px;
+
+nav {
+    position: absolute;
+    top: 0 !important;
+    background-color: white;
+    height: 70px;
 }
-.slider{
-	margin-top: 64px;
+
+.slider {
+    margin-top: 64px;
 }
-.logo{
-	height: 70px;
-	width: 70px;
+
+.logo {
+    height: 70px;
+    width: 70px;
 }
-.navi{
-	color: black !important;
+
+.navi {
+    color: black !important;
 }
-.container{
-	width: 100%;
+
+.container {
+    width: 100%;
 }
-.form{
-	margin-top: 100px;
+
+.form {
+    margin-top: 100px;
 }
-.formpic{
-	width: 700px;
-	height: 500px;
+
+.formpic {
+    width: 700px;
+    height: 500px;
 }
-.card,.card-tabs,.card-content{
-	background-color: black;
+
+.card,
+.card-tabs,
+.card-content {
+    background-color: black;
 }
-h5{
-	color: white;
+
+h5 {
+    color: white;
+}
+
+
+
+
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+
+.white {
+    background-color: black !important;
+    color: white !important;
+    font-family: 'News Cycle', sans-serif;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.down {
+    margin-top: 100px;
+}
+
+
+
+
+div.wrapper {
+    float: left;
+    /* important */
+    position: relative;
+    /* important(so we can absolutely position the description div */
+}
+
+div.description {
+    position: absolute;
+    /* absolute position (so we can position it where we want)*/
+    bottom: 0px;
+    /* position will be on bottom */
+    left: 0px;
+    width: 100%;
+    /* styling bellow */
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    /* transparency */
+    filter: alpha(opacity=60);
+    /* IE transparency */
+}
+
+p.description_content {
+    padding: 10px;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.resize {
+    height: 300px;
+    width: 350px;
+}
+
+.iContainer {
+    margin-top: 100px;
+}
+
+.materialboxed {
+    margin: 10px;
+    margin-right: 10px !important;
+    height: 400px;
+    width: 400px;
+}
+
+h3 {
+    color: white;
+    font-family: 'News Cycle', sans-serif;
+    margin-bottom: 30px;
+}
+.video-container{
+	height: 515px;
+	width: 716px;
+	margin-left: -40px;
 }
