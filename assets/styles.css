@@ -113,6 +113,10 @@ nav {
 .container {
     width: 100%;
 }
+.btn{
+	background-color: grey;
+	color: black;
+}
 
 .form {
     margin-top: 100px;
