@@ -93,7 +93,7 @@ body {
 nav {
     position: absolute;
     top: 0 !important;
-    background-color: white;
+    background-color: black;
     height: 70px;
 }
 
@@ -107,7 +107,7 @@ nav {
 }
 
 .navi {
-    color: black !important;
+    color: white !important;
 }
 
 .container {
